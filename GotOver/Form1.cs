@@ -62,7 +62,7 @@ namespace GotOver
             public float val;
             public float weight;
             Random rand = new Random();
-            public Neuron(int layerNum)
+            public Neuron(int layerNum, int layersNum)
             {
                 val = 0;
                 weight = (float)rand.NextDouble();
@@ -70,7 +70,7 @@ namespace GotOver
             }
             public void Activation()
             {
-
+                if (layer != )
             }
         }
         public List<List<Neuron>> Layers = new List<List<Neuron>>();
@@ -93,16 +93,16 @@ namespace GotOver
                 {
                     for (int j = 0; j < 9216; j++)
                     {
-                        temp.Add(new Neuron(Layers.Count()));
+                        temp.Add(new Neuron(Layers.Count(), LayerCount));
                     }
 
                     Layers.Add(temp);
                 }
-                else if(i == LayerCount - 1)
+                else if (i == LayerCount - 1)
                 {
                     for (int j = 0; j < 2; j++)
                     {
-                        temp.Add(new Neuron(Layers.Count()));
+                        temp.Add(new Neuron(Layers.Count(), LayerCount));
                     }
 
                     Layers.Add(temp);
@@ -111,7 +111,7 @@ namespace GotOver
                 {
                     for (int j = 0; j < NeuronsPerLayer; j++)
                     {
-                        temp.Add(new Neuron(Layers.Count()));
+                        temp.Add(new Neuron(Layers.Count(), LayerCount));
                     }
 
                     Layers.Add(temp);
@@ -131,7 +131,7 @@ namespace GotOver
             Bitmap Monitor = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
             Bitmap Smaller = new Bitmap(128, 72);
             Graphics g = Graphics.FromImage(Monitor);
-            while(true)
+            while (true)
             {
                 if (ActiveWindowTitle() == "Getting Over It")
                 {
