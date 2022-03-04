@@ -59,6 +59,7 @@ namespace GotOver
         public class Neuron
         {
             public int layer;
+            public int layerNums;
             public float val;
             public float weight;
             Random rand = new Random();
@@ -67,10 +68,22 @@ namespace GotOver
                 val = 0;
                 weight = (float)rand.NextDouble();
                 layer = layerNum;
+                layerNums = layersNum;
             }
             public void Activation()
             {
-                if (layer != )
+                if (layer != layerNums)
+                {
+
+                }
+                else if (layer == 0)
+                {
+
+                }
+                else
+                {
+
+                }
             }
         }
         public List<List<Neuron>> Layers = new List<List<Neuron>>();
