@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GotOver", "GotOver\GotOver.csproj", "{C12A2D58-1D3C-483F-9AFD-142D0680671B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C12A2D58-1D3C-483F-9AFD-142D0680671B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12A2D58-1D3C-483F-9AFD-142D0680671B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12A2D58-1D3C-483F-9AFD-142D0680671B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12A2D58-1D3C-483F-9AFD-142D0680671B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBBB8B47-8313-4248-837E-DDF7948FCEE2}
+	EndGlobalSection
+EndGlobal
